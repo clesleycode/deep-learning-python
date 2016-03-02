@@ -10,7 +10,7 @@
 	margin-top: 0;
 	margin-bottom: 0;
 }
-pre + pre {
+.join + pre + pre {
 	display: inline-block;
 	width: 45%;
 	float: right;
