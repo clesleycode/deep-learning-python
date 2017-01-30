@@ -42,6 +42,8 @@ Brought to you by [Lesley Cordero](http://www.columbia.edu/~lc2958) and [ADI](ht
 - [6.0 Convolution Neural Networks](#60-convolution-neural-networks)
 - [7.0 Final Words](#70-final-words)
     + [7.1 Resources](#71-resources)
+    + [7.2 Mini Courses](#72-mini-courses)
+    
 
 
 ## 0.0 Setup
@@ -67,7 +69,7 @@ pip3 install imutils
 
 ### 1.1 What is Deep Learning? 
 
-Deep Learning is a branch of machine learning that involves pattern recognition on unlabeled and unstructured data. and uses a model of computing inspired by the structure of the brain. Hence we call this model a neural network. The basic foundational unit of a neural network is the neuron, which is actually conceptually quite simple. 
+Deep Learning is a branch of machine learning that involves pattern recognition on unlabeled and unstructured data. It uses a model of computing inspired by the structure of the brain, which we call this model a neural network.
 
 ### 1.2 Neural Networks
 
@@ -967,3 +969,19 @@ Deep Learning is a math intensive field of machine learning - in this tutorial, 
 
 [Complete Deep Learning Book](http://www.deeplearningbook.org/) <br>
 [Deep Learning in Neural Networks](https://arxiv.org/abs/1404.7828)
+
+
+### 7.2 Mini Courses
+
+Learn about courses [here](www.byteacademy.co/all-courses/data-science-mini-courses/).
+
+[Python 101: Data Science Prep](https://www.eventbrite.com/e/python-101-data-science-prep-tickets-30980459388) <br>
+[Intro to Data Science & Stats with R](https://www.eventbrite.com/e/data-sci-109-intro-to-data-science-statistics-using-r-tickets-30908877284) <br>
+[Data Acquisition Using Python & R](https://www.eventbrite.com/e/data-sci-203-data-acquisition-using-python-r-tickets-30980705123) <br>
+[Data Visualization with Python](https://www.eventbrite.com/e/data-sci-201-data-visualization-with-python-tickets-30980827489) <br>
+[Fundamentals of Machine Learning and Regression Analysis](https://www.eventbrite.com/e/data-sci-209-fundamentals-of-machine-learning-and-regression-analysis-tickets-30980917759) <br>
+[Natural Language Processing with Data Science](https://www.eventbrite.com/e/data-sci-210-natural-language-processing-with-data-science-tickets-30981006023) <br>
+[Machine Learning with Data Science](https://www.eventbrite.com/e/data-sci-309-machine-learning-with-data-science-tickets-30981154467) <br>
+[Databases & Big Data](https://www.eventbrite.com/e/data-sci-303-databases-big-data-tickets-30981182551) <br>
+[Deep Learning with Data Science](https://www.eventbrite.com/e/data-sci-403-deep-learning-with-data-science-tickets-30981221668) <br>
+[Data Sci 500: Projects](https://www.eventbrite.com/e/data-sci-500-projects-tickets-30981330995)
