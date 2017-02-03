@@ -79,9 +79,9 @@ Neural networks get their representations from using layers of learning. The gen
 
 Meanwhile, a typical singular neuron looks like [this](https://www.analyticsvidhya.com/wp-content/uploads/2016/03/1.jpg). 
 
-- The x1, x2,…, xN variables are the inputs. These can either be the actual observations from the input layer or an intermediate value from one of the hidden layers.
-- x0 is the bias unit. This is a constant value added to the input of the activation function.
-- w0,w1, w2,…,wN are the weights on each input - note that even the bias unit has a weight.
+- The x<sub>1</sub>, x<sub>2</sub>,…, x<sub>N</sub> variables are the inputs. These can either be the actual observations from the input layer or an intermediate value from one of the hidden layers.
+- x<sub>0</sub> is the bias unit. This is a constant value added to the input of the activation function.
+- w<sub>0</sub>,w<sub>1</sub>, w<sub>2</sub>,…,w<sub>N</sub> are the weights on each input - note that even the bias unit has a weight.
 - a is the output of the neuron, which we calculate from [this](https://www.analyticsvidhya.com/wp-content/uploads/2016/03/eq1-neuron.png) formula, where f is the activation function (you can find more on this in section 1.2.5)
 
 ##### 1.2.2 Input Layer
@@ -226,7 +226,7 @@ As you can see, this logistic regression function isn't quite so good! It fails 
 
 ### 2.3 Gradient Descent & Loss Function
 
-In section 1, we briefly covered gradient descent and loss functions. Here, we'll actually implement these functions and use them to train our neural net.So let's start by defining some useful variables and parameters for gradient descent:
+In section 1, we briefly covered gradient descent and loss functions. Here, we'll actually implement these functions and use them to train our neural net. So let's start by defining some useful variables and parameters for gradient descent:
 
 ```python
 num_examples = len(X) # training set size
@@ -242,7 +242,7 @@ The learning rate determines how fast or slow we will move towards the optimal w
 
 #### 2.3.2 Regularization Strength
 
-The regularization parameter (lambda) reduces overfitting, which reduces the variance of your estimated regression parameters. However, it does this at the expense of adding bias to your estimate - a common tradeoff you'll encounter in the field of machine learning.
+The regularization parameter, &lambda; reduces overfitting, which reduces the variance of your estimated regression parameters. However, it does this at the expense of adding bias to your estimate - a common tradeoff you'll encounter in the field of machine learning.
 
 One approach you can take is to randomly subsample your data a number of times and look at the variation in your estimate. Then repeat the process for a slightly larger value of lambda to see how it affects the variability of your estimate. Keep in mind that whatever value of lambda you decide is appropriate for your subsampled data, you can likely use a smaller value to achieve comparable regularization on the full data set.
 
@@ -429,7 +429,7 @@ We'll go through a classic deep learning problem involving hand-written digit re
 
 #### 3.2.1 Single Layer Neural Network
 
-As always, we'll need to input the needed modules. input_data is available on the github link [here](https://github.com/lesley2958/deep-learning-python/blob/master/input_data.py) - make sure to download it and include it in the same directory as your workspace. This will allow you to download the needed data.
+As always, we'll need to input the needed modules. `input_data.py` is available on the github link [here](https://github.com/lesley2958/deep-learning-python/blob/master/input_data.py) - make sure to download it and include it in the same directory as your workspace. This will allow you to download the needed data.
 
 ``` python
 import tensorflow as tf
@@ -480,7 +480,7 @@ Using the backpropogation algorithm, we minimize the cross-entropy using the gra
 train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
 ```
 
-Now we can start the computation by instantiating tf.Session(). This is in charge of executing the TensorFlow operations in the available CPUs or GPUs. Then, we can execute the operation initializing all the variables:
+Now we can start the computation by instantiating `tf.Session()`. This is in charge of executing the TensorFlow operations in the available CPUs or GPUs. Then, we can execute the operation initializing all the variables:
 
 ``` python
 sess = tf.Session()
@@ -582,7 +582,13 @@ predict_fn = theano.function([input_var], T.argmax(test_prediction, axis=1))
 print("Predicted class for first test input: %r" % predict_fn(test_data[0]))
 ```
 
-### 3.4 Caffe
+### 3.4 Keras
+
+Keras is a super powerful, easy to use Python library for building neural networks and deep learning networks.
+
+
+
+### 3.5 Caffe
 
 Caffe is a deep learning framework written in C++. We won't be going through an implementation of caffe, but it's important to note its existence in deep learning, as well as the advantages and disadvantages of using the module. 
 
@@ -593,7 +599,9 @@ On the other hand, because caffe is written in C++, it's incredibly fast, even f
 
 ## 4.0 Feedforward Neural Networks 
 
-Feedforward Neural Networks are the simplest form of Artificial Neural Networks. These networks have the three types of layers we just discussed: Input layer, hidden layer and output layer. First, we import the needed modules.
+Feedforward Neural Networks are the simplest form of Artificial Neural Networks. These networks have the three types of layers we just discussed: Input layer, hidden layer and output layer. There are no backwards or inter-layer connections. Furthermore, the nodes in the layer are fully connected to the nodes in the next layer. 
+
+First, we import the needed modules.
 
 ``` python
 from sklearn.preprocessing import LabelEncoder
@@ -610,8 +618,8 @@ import cv2
 import os
 ```
 
-
 This function resizes the image to a fixed size and then flattens it into a list of features (raw pixel intensities).
+
 ``` python
 def image_to_feature_vector(image, size=(32, 32)):
     return (cv2.resize(image, size).flatten())
