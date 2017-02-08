@@ -56,6 +56,8 @@ Download [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.
 
 ### 0.2 Libraries
 
+Let's install the modules we'll need for this tutorial. Open up your terminal and enter the following commands to install the needed python modules: 
+
 ```
 pip3 install sklearn
 pip3 install lasagne
