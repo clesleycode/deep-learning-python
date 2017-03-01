@@ -71,7 +71,7 @@ pip3 install imutils
 
 ### 1.1 What is Deep Learning? 
 
-Deep Learning is a branch of machine learning that involves pattern recognition on unlabeled and unstructured data. It uses a model of computing inspired by the structure of the brain, which we call this model a neural network.
+Deep Learning is a branch of machine learning that involves pattern recognition on unlabeled or unstructured data. It uses a model of computing inspired by the structure of the brain, which we call this model a neural network.
 
 ### 1.2 Neural Networks
 
