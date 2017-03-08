@@ -20,10 +20,11 @@ Brought to you by [Lesley Cordero](http://www.columbia.edu/~lc2958) and [ADI](ht
         * [1.3.1 Feedforward Neural Networks](#131-feedforward-neural-networks)
         * [1.3.2 Convolutional Neural Networks](#132-convolution-neural-networks)
         * [1.3.3 Recurrent Neural Networks](#133-recurrent-neural-networks)
-    + [1.4 Back-Propogation](#14-back-propogation)
+    + [1.4 BackPropagation](#14-backpropagation)
         * [1.4.1 BackProp Algorithm](#141-backprop-algorithm)
-    + [1.5 Hardware](#15-hardware)
-        * [1.5.1 GPU](#151-gpu)
+    + [1.5 Gradient Descent](#15-gradient-descent)
+    + [1.6 Hardware](#16-hardware)
+        * [1.6.1 GPU](#161-gpu)
 - [2.0 Building a Neural Net](#20-building-a-neural-net)
     + [2.1 Generating a Dataset](#21-generating-a-dataset)
     + [2.2 Logistic Regression](#22-logistic-regression)
@@ -118,7 +119,7 @@ Convolutional neural networks are a type of feed-forward network. What distingui
 
 A Recurrent Neural Network is a class of ANNs where connections between units form a directed cycle, as shown [here](https://www.talaikis.com/wp-content/uploads/2016/03/rl.png).
 
-### 1.4 Back-Propagation
+### 1.4 BackPropagation
 
 Back-propagation algorithms work by determining the loss (or error) at the output and then propagating it back into the network. The weights are updated to minimize the error resulting from each neuron, since the goal of learning is to assign correct weights for these edges.
 
